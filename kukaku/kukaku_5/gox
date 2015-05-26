@@ -1,0 +1,3 @@
+#
+convert -resize 320x240 DSCN2445.JPG may24_5A.jpg
+convert -resize 320x240 DSCN2446.JPG may24_5B.jpg
