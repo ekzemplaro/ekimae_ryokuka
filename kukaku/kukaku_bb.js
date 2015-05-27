@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	kukaku.js
 //
-//					May/27/2015
+//					May/26/2015
 //
 // -----------------------------------------------------------------------
 jQuery (function ()
@@ -11,14 +11,18 @@ jQuery (function ()
 	var file_json = "data_kukaku.json";
 	jQuery.get (file_json,function (data_received)
 		{
+//		jQuery("#contents").html (data_received);
 
 	jQuery ("button").click (function ()
 		{
 		var key = this.id;
+//		var value = data_received[key];
 
 		jQuery("#outarea_bb").text (key);
-//		var obj = JSON.parse( data_received );
-		obj = data_received;
+//		jQuery("#outarea_cc").text (key.substring (0,8));
+//		jQuery("#outarea_dd").text (value);
+//		jQuery("#outarea_ee").text (data_received);
+		var obj = JSON.parse( data_received );
 		jQuery("#outarea_ff").text (obj[key]);
 
 		var value = obj[key];
