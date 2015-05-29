@@ -1,7 +1,10 @@
+Greening at the station square
+
 駅前空地緑化
 
+http://ekzemplaro.org/ekimae_ryokuka
 
-May/25/2015
+May/29/2015
 
 
 -----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	kukaku.js
 //
-//					May/27/2015
+//					May/29/2015
 //
 // -----------------------------------------------------------------------
 jQuery (function ()
@@ -9,7 +9,7 @@ jQuery (function ()
 	jQuery("#outarea_aa").text ("*** start *** kukaku.js ***");
 
 	var file_json = "data_kukaku.json";
-	jQuery.get (file_json,function (data_received)
+	jQuery.getJSON (file_json,function (data_received)
 		{
 
 	jQuery ("button").click (function ()
@@ -19,7 +19,7 @@ jQuery (function ()
 		jQuery("#outarea_bb").text (key);
 //		var obj = JSON.parse( data_received );
 		obj = data_received;
-		jQuery("#outarea_ff").text (obj[key]);
+		jQuery("#outarea_ff").text (obj[key]["foto"][0]);
 
 		var value = obj[key];
 
@@ -27,6 +27,10 @@ jQuery (function ()
 
 		jQuery("#contents").html (str_out);
 
+		name_gen_proc (key,value,"engei");
+		name_gen_proc (key,value,"yasou");
+		name_gen_proc (key,value,"yasai");
+		name_gen_proc (key,value,"kyuukon");
 		});
 	});
 
@@ -45,18 +49,45 @@ function contents_gen_proc (key,value)
 	str_out += "</h2>";
 	str_out += "</blockquote>";
 
-	var file_jpg = key + "/" + value[0]; 
+	var file_jpg = key + "/" + value["foto"][0]; 
 
 	str_out += '<img src="' + file_jpg + '">';
 
-	if (1 < value.length)
+	if (1 < value["foto"].length)
 		{
 		str_out += "&nbsp;&nbsp;";
-		file_jpg = key + "/" + value[1]; 
+		file_jpg = key + "/" + value["foto"][1]; 
 		str_out += '<img src="' + file_jpg + '">';
 		}
 
+
 	return	str_out;
+}
+
+// -----------------------------------------------------------------------
+function name_gen_proc (key,value,category)
+{
+	var str_out = "";
+
+	var data_cur = value[category];
+
+	if ((0 < data_cur.length) && (0 < data_cur[0].length))
+		{
+		str_out = "<br />";
+		for (var it in data_cur)
+			{
+			str_out += "&nbsp;&nbsp;";
+			str_out += data_cur[it];
+			str_out += "&nbsp;&nbsp;";
+			if ((it % 6) == 5)
+				{
+				str_out += "<br /><br />";
+				}
+
+			}
+		}
+
+	jQuery("#" + category).html (str_out);
 }
 
 // -----------------------------------------------------------------------
