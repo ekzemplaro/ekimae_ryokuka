@@ -41,6 +41,7 @@ jQuery (function ()
 function contents_gen_proc (key,value)
 {
 	var llx = key.length;
+	var data_cur = value["foto"];
 
 	var str_out = "";
 	str_out += "<blockquote>";
@@ -49,15 +50,18 @@ function contents_gen_proc (key,value)
 	str_out += "</h2>";
 	str_out += "</blockquote>";
 
-	var file_jpg = key + "/" + value["foto"][0]; 
+	var file_jpg = key + "/" + data_cur[0]; 
 
 	str_out += '<img src="' + file_jpg + '">';
 
-	if (1 < value["foto"].length)
+	if (1 < data_cur.length)
 		{
+		for (var it = 1; it < data_cur.length; it += 1)
+			{ 
 		str_out += "&nbsp;&nbsp;";
-		file_jpg = key + "/" + value["foto"][1]; 
+		file_jpg = key + "/" + data_cur[it]; 
 		str_out += '<img src="' + file_jpg + '">';
+			}
 		}
 
 

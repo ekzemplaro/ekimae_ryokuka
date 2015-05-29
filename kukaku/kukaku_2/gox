@@ -1,3 +1,7 @@
 #
-convert -resize 320x240 DSCN2439.JPG may24_2A.jpg
-convert -resize 320x240 DSCN2440.JPG may24_2B.jpg
+#convert -resize 320x240 DSCN2439.JPG may24_2A.jpg
+#convert -resize 320x240 DSCN2440.JPG may24_2B.jpg
+#
+convert -resize 400x300 DSCN2538.JPG may29_2A.jpg
+convert -resize 400x300 DSCN2539.JPG may29_2B.jpg
+#
