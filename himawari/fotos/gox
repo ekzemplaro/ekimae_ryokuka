@@ -1,0 +1,4 @@
+#
+#
+convert -resize 400x300 ../../tmp/DSCN2697.JPG jun20_2015_himawari_aa.jpg
+#
