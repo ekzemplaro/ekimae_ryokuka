@@ -1,3 +1,2 @@
 #
-convert -resize 400x300 ../../tmp/DSCN2695.JPG jun20_2015_soba_aa.jpg
-convert -resize 400x300 ../../tmp/DSCN2704.JPG jun20_2015_soba_bb.jpg
+convert -resize 400x300 ../../tmp/DSCN3215.JPG aug01_2015_soba_aa.jpg

@@ -1,5 +1,0 @@
-#
-convert -resize 400x300 ../tmp/DSCN2579.JPG jun08_2015_aa.jpg
-convert -resize 400x300 ../tmp/DSCN2580.JPG jun08_2015_bb.jpg
-#
-#

@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	kukaku.js
 //
-//					May/29/2015
+//					Aug/02/2015
 //
 // -----------------------------------------------------------------------
 jQuery (function ()
@@ -17,7 +17,6 @@ jQuery (function ()
 		var key = this.id;
 
 		jQuery("#outarea_bb").text (key);
-//		var obj = JSON.parse( data_received );
 		obj = data_received;
 		jQuery("#outarea_ff").text (obj[key]["foto"][0]);
 
@@ -50,7 +49,7 @@ function contents_gen_proc (key,value)
 	str_out += "</h2>";
 	str_out += "</blockquote>";
 
-	var file_jpg = key + "/" + data_cur[0]; 
+	var file_jpg = "fotos/" + data_cur[0]; 
 
 	str_out += '<img src="' + file_jpg + '">';
 
@@ -58,9 +57,9 @@ function contents_gen_proc (key,value)
 		{
 		for (var it = 1; it < data_cur.length; it += 1)
 			{ 
-		str_out += "&nbsp;&nbsp;";
-		file_jpg = key + "/" + data_cur[it]; 
-		str_out += '<img src="' + file_jpg + '">';
+			str_out += "&nbsp;&nbsp;";
+			file_jpg = "fotos/" + data_cur[it]; 
+			str_out += '<img src="' + file_jpg + '">';
 			}
 		}
 
