@@ -1,4 +1,4 @@
 #
 #
-convert -resize 400x300 ../../tmp/DSCN3216.JPG aug01_2015_benibana_aa.jpg
+convert -resize 400x300 ../../tmp/DSCN3357.JPG aug08_2015_benibana_aa.jpg
 #
