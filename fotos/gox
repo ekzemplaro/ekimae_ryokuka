@@ -1,9 +1,9 @@
 #
-convert -resize 400x300 ../tmp/DSCN3350.JPG aug08_2015_aa.jpg
-convert -resize 400x300 ../tmp/DSCN3351.JPG aug08_2015_bb.jpg
+convert -resize 400x300 ../tmp/DSCN4034.JPG sep19_2015_aa.jpg
+convert -resize 400x300 ../tmp/DSCN4035.JPG sep19_2015_bb.jpg
 #
-convert -resize 400x300 ../tmp/DSCN3352.JPG aug08_2015_cc.jpg
-convert -resize 400x300 ../tmp/DSCN3353.JPG aug08_2015_dd.jpg
-convert -resize 400x300 ../tmp/DSCN3354.JPG aug08_2015_ee.jpg
-convert -resize 400x300 ../tmp/DSCN3355.JPG aug08_2015_ff.jpg
+convert -resize 400x300 ../tmp/DSCN4036.JPG sep19_2015_cc.jpg
+convert -resize 400x300 ../tmp/DSCN4037.JPG sep19_2015_dd.jpg
+convert -resize 400x300 ../tmp/DSCN4038.JPG sep19_2015_ee.jpg
+convert -resize 400x300 ../tmp/DSCN4039.JPG sep19_2015_ff.jpg
 #

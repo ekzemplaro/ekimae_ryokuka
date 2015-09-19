@@ -1,4 +1,4 @@
 #
 #
-convert -resize 400x300 ../../tmp/DSCN3348.JPG aug08_2015_visitors_aa.jpg
+convert -resize 400x300 ../../tmp/DSCN4041.JPG sep19_2015_visitors_aa.jpg
 #
